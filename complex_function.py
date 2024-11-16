@@ -1,3 +1,6 @@
+# Created in Desmos by max
+# Rewritten in Python by siembra
+
 import numpy as np
 import math
 import matplotlib.pyplot as plt
@@ -8,8 +11,8 @@ def f(x,y):
     return ((((1+(5**.5))/2)**complex(x,y)) - ((1-(5**.5))/2)**complex(x,y))/(5**.5)
     #return (complex(x,y)**2)
 
-R = 50
-D = 50
+R = 8
+D = 6
 s = 11
 C = np.arange(-R,R + 1/D,1/D)
 
