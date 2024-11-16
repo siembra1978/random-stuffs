@@ -3,13 +3,16 @@
 
 import numpy as np
 import math
+import cmath
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.colors import hsv_to_rgb
 
 def f(x,y):
-    return ((((1+(5**.5))/2)**complex(x,y)) - ((1-(5**.5))/2)**complex(x,y))/(5**.5)
+    #return ((((1+(5**.5))/2)**complex(x,y)) - ((1-(5**.5))/2)**complex(x,y))/(5**.5)
     #return (complex(x,y)**2)
+    return ((x/y)*complex(x,y))
+    #return cmath.sqrt(-1)**x
 
 R = 8
 D = 6
@@ -25,6 +28,8 @@ points = []
 
 i = 0
 
+total = len(C)**2
+
 for a in a_values:
     for b in b_values:
         hue = ((s*np.imag(f(a,b)))%360)/360
@@ -38,7 +43,7 @@ for a in a_values:
         i+=1
         #point = (float(a),float(b), np.real(f(a,b)), color)
         point = (float(a),float(b), np.real(f(a,b)), color)
-        print(f'{round(i/(len(C)**2)*100)}% | {i}/{len(C)**2}')
+        print(f'{(i/total)*100:.2f}% | {i}/{total}')
         points.append(point)
 
 #print("Points: ",len(points))
