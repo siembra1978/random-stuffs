@@ -53,7 +53,8 @@ class Cube:
                          (-1,-1,-1),(-1,-1,1)]
 
     def transform(self):
-        pass
+        for i, vertex in enumerate(self.vertices):
+            pass
 
     def project(self,vertex):
         pass
