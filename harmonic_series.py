@@ -10,13 +10,13 @@ sum_values = []
 n = 1
 nmax = 10000000000
 p = 2
-t = .05
+t = .005
 sum = 0
 
 if abs(p) > 0:
     while n <= nmax:
         n_values.append(n)
-        term = 1 / pow(n, p)
+        term = 1 / (n**p)
         sum += term
         sum_values.append(sum)
 

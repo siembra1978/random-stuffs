@@ -61,7 +61,7 @@ pi = getPiArchimedes()
 
 inputv = pi/6
 
-print(pi)
-print("sine = " + str(sine(inputv)))
-print("cosine = " + str(cosine(inputv)))
-print ("tangent = " + str(tan(inputv)))
+print(f'pi = {pi}')
+print(f'sine = {sine(inputv)}')
+print(f'cosine = {cosine(inputv)}')
+print (f'tangent = {tan(inputv)}')
