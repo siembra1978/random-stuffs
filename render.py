@@ -68,7 +68,7 @@ class Cube:
 
 objects = []
 
-objects.append(Square(screen, (WIDTH/2,HEIGHT/2), 100, 5))
+objects.append(Square(screen, (WIDTH/2,HEIGHT/2), 250, 5))
 #objects.append(Cube(screen, (WIDTH/2,HEIGHT/2), 50))
 
 d = 0
