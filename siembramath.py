@@ -56,12 +56,12 @@ def tan(input):
     bottom = cosine(input)
     return top/bottom
 
+if __name__ == "__main__":
+    pi = getPiArchimedes()
 
-pi = getPiArchimedes()
+    inputv = pi/6
 
-inputv = pi/6
-
-print(f'pi = {pi}')
-print(f'sine = {sine(inputv)}')
-print(f'cosine = {cosine(inputv)}')
-print (f'tangent = {tan(inputv)}')
+    print(f'pi = {pi}')
+    print(f'sine = {sine(inputv)}')
+    print(f'cosine = {cosine(inputv)}')
+    print (f'tangent = {tan(inputv)}')

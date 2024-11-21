@@ -14,7 +14,7 @@ def f(x,y):
     return ((x/y)*complex(x,y))
     #return cmath.sqrt(-1)**x
 
-R = 8
+R = 10
 D = 6
 s = 11
 C = np.arange(-R,R + 1/D,1/D)
