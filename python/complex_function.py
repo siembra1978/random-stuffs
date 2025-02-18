@@ -9,9 +9,9 @@ from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.colors import hsv_to_rgb
 
 def f(x,y):
-    #return ((((1+(5**.5))/2)**complex(x,y)) - ((1-(5**.5))/2)**complex(x,y))/(5**.5)
+    return ((((1+(5**.5))/2)**complex(x,y)) - ((1-(5**.5))/2)**complex(x,y))/(5**.5)
     #return (complex(x,y)**2)
-    return ((x/y)*complex(x,y))
+    #return ((x/y)*complex(x,y))
     #return cmath.sqrt(-1)**x
 
 R = 10
