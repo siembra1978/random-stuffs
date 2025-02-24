@@ -4,11 +4,11 @@ error = .00001
 min_h = 1e-10
 
 def f(x):
-    return x**3
+    return 
 
 h = .25
 
-x = 5
+x = 0
 
 while h > min_h:
     approximation = (f(x + h) - f(x))/h
