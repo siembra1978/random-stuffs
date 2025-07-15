@@ -5,7 +5,7 @@ import random
 import time
 
 interval = 120 # nil for as fast as possible
-n = 250
+n = 500
 maxh = 100
 
 bars = []
