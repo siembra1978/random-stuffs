@@ -4,8 +4,8 @@ import pygame
 import random
 import time
 
-interval = 120 # nil for as fast as possible
-n = 500
+interval = 15 # nil for as fast as possible
+n = 100
 maxh = 100
 
 bars = []
@@ -66,4 +66,4 @@ while True:
         timed_calculated = True
 
     pygame.display.update()
-    #clock.tick(interval)
+    clock.tick(interval)
