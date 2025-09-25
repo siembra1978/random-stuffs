@@ -85,4 +85,4 @@ while True:
 
     screen.blit(fps_display,(0,0))
     pygame.display.update()
-    clock.tick(60)
+    clock.tick(1)
